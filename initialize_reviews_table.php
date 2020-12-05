@@ -1,13 +1,6 @@
 <?php
 
-function dbConnect() {
-    $link = mysqli_connect('db', 'book_log', 'pass', 'book_log');
-    if(!$link) {
-        echo 'データベースに接続できませんでした' . PHP_EOL;
-        echo 'Debugging error: ' . mysqli_connect_error() . PHP_EOL;
-    }
-    return $link;
-}
+require_once __DIR__ . '/lib/mysqli.php';
 
 function dropTable($link) {
     $dropTableSql = 'DROP TABLE IF EXISTS reviews';
