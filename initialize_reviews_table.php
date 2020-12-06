@@ -33,7 +33,6 @@ function createTable($link) {
         echo 'Debugging error: ' . mysqli_error($link) . PHP_EOL;
     }
 }
-
 $link = dbConnect();
 dropTable($link);
 createTable($link);
