@@ -28,7 +28,7 @@
                     <label for="status2">読んでいる</label>
                 </div>
                 <div>
-                    <input type="radio" name="status" id="status3" value="読了">
+                    <input type="radio" name="status" id="status3" value="読了" checked>
                     <label for="status3">読了</label>
                 </div>
             </div>
