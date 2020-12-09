@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/css/app.css/app.css">
-    <title>読書ログ登録</title>
-</head>
-<body>
-    <header div="header">
-        <div class="container">
+  <header div="header">
             <h1><a href="index.php">読書ログ</a></h1>
             <form action="create.php" method="post">
                 <?php if(count($errors)): ?>
@@ -18,10 +8,8 @@
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
-        </div>
     </header>
     <form>
-        <div class="container">
             <h2>読書ログの登録</h2>
             <div>
                 <label for="title">題名</label>
@@ -57,7 +45,4 @@
                 <textarea type="text" name="summary" id="summary" rows="10"><?php echo $review['summary'] ?></textarea>
             </div>
             <button type="submit">登録する</button>
-        </div>
     </form>
-</body>
-</html>
