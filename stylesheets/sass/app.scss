@@ -1,13 +1,41 @@
 @charset "UTF-8";
 
+// 変数
+$grey: #555A5E;
+$border: #DADFE3;
+
+// 共通
 body {
   font-family: sans-serif;
-  color: #555A5E;
+  color: $grey;
+}
+a {
+  text-decoration: none;
 }
 
-h1 {
-  border-bottom: solid 1px #DADFE3;
-  font-size: 16px;
+// header
+.header{
+  max-width: 1240px;
+  width: 91%;
+
+  h1 {
+  border-bottom: solid 1px $border;
+  font-size: 45px;
   letter-spacing: 1px;
   padding-bottom: 20px;
+  margin-bottom: 30px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+// form
+form {
+  font-size: 35px;
+  .container {
+    max-width: 1240px;
+    width: 91%;
+  }
 }
